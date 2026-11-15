@@ -1,0 +1,23 @@
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+out/
+bin/
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+
+# Local environment & credentials (NEVER commit real DB passwords)
+config/db_config.env
+.env
+
+# IDE & OS files
+.vscode/
+.vs/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

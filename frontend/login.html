@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlightOps | Airport Operations Login</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <div class="login-header">
+      <div class="login-logo">&#9992;</div>
+      <h1>FlightOps ATC &amp; Airport Control</h1>
+      <p>Flight Scheduling &amp; Airport Management System</p>
+    </div>
+    <form id="loginForm" class="login-form">
+      <div id="loginError" class="alert alert-danger" style="display:none;"></div>
+
+      <div class="demo-box">
+        <div>
+          <strong>Demo Admin:</strong> <code>admin</code> / <code>Admin@123</code>
+        </div>
+        <button type="button" id="fillDemoBtn" class="btn btn-outline btn-sm">Auto-Fill</button>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Administrator Username</label>
+        <input type="text" id="username" class="form-control" placeholder="Enter username" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter password" required />
+      </div>
+
+      <button type="submit" class="btn btn-sky" style="width:100%; margin-top:8px; padding:11px;">
+        Sign In to Control Center
+      </button>
+    </form>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
